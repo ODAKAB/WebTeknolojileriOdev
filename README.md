@@ -1,6 +1,6 @@
 # WebTeknolojileriOdev
 ### Koşullar
-- [ ] Site tasarımı olarak Bootstrap içeren responsive (çözünürlüğe göre değişen tasarım) (hazır tema
+- [x] Site tasarımı olarak Bootstrap içeren responsive (çözünürlüğe göre değişen tasarım) (hazır tema
   kullanılamaz) bir yapı kullanılmalıdır.
 ####
 - [ ] Hakkında sayfası giriş sayfası niteliğinde olmalı, sayfa sahibinin kendini tanıtan bilgiler (Hobiler,
