@@ -2,7 +2,7 @@
 ### Koşullar
 - [x] Site tasarımı olarak Bootstrap içeren responsive (çözünürlüğe göre değişen tasarım) (hazır tema kullanılamaz) bir yapı kullanılmalıdır.
 ####
-- [ ] Hakkında sayfası giriş sayfası niteliğinde olmalı, sayfa sahibinin kendini tanıtan bilgiler (Hobiler, Etkinlikler vb ) , sevdiği spor,etkinlik vb ait resimler, linkler vb. içermelidir.
+- [x] Hakkında sayfası giriş sayfası niteliğinde olmalı, sayfa sahibinin kendini tanıtan bilgiler (Hobiler, Etkinlikler vb.), sevdiği spor,etkinlik vb. ait resimler, linkler vb. içermelidir.
 ####
 - [x] Eğitim bilgilerini içeren CV niteliğinde semantic tagların kullanıldığı özgeçmiş sayfası olmalıdır.
 ####
