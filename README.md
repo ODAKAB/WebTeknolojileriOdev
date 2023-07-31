@@ -4,7 +4,7 @@
 ####
 - [ ] Hakkında sayfası giriş sayfası niteliğinde olmalı, sayfa sahibinin kendini tanıtan bilgiler (Hobiler, Etkinlikler vb ) , sevdiği spor,etkinlik vb ait resimler, linkler vb. içermelidir.
 ####
-- [ ] Eğitim bilgilerini içeren CV niteliğinde semantic tagların kullanıldığı özgeçmiş sayfası olmalıdır.
+- [x] Eğitim bilgilerini içeren CV niteliğinde semantic tagların kullanıldığı özgeçmiş sayfası olmalıdır.
 ####
 - [x] Şehrim şeklinde bir sayfa olmalı, bu sayfada memleketinize ya da sevdiğiniz şehre ait bilgiler yer almalıdır. (Şehrin nüfusu, gezilecek yerler vs.) Sayfanın başında ya da sonunda en az 4 resimden oluşan bir slider yer almalıdır. Slider’da yer alan resimlere tıklandığında ilgili resimlere ait içeriklere link olmalıdır.(İçerikler ayrıntılı olmadan site içersinde yer almalı)
 ####
