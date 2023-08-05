@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Giriş</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/globalstyle.css">
     <script type="text/javascript" src="js/jquery.slim.min.js"></script>
@@ -13,7 +13,7 @@
 <div class="container">
     <div class="row text-center">
         <div class="col-12" style="background-color: darkgreen">
-            <a href="#" style="color:#d6d6d6;text-decoration:none;">LOGIN</a>
+            <a href="#" style="color:#d6d6d6;text-decoration:none;">GİRİŞ</a>
         </div>
         <div class="col-md-12 col-lg-2" style="background-color: #b05279">
             <a href="hakkinda.html" style="color:#d6d6d6;text-decoration:none;">Hakkında</a>
@@ -36,7 +36,19 @@
     </div>
 </div>
 <div class="container content mt-4 mb-4">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacinia accumsan magna, id varius ex blandit nec. In sed felis eu velit elementum pulvinar eu vel turpis. Vestibulum sit amet mi tincidunt, sodales tortor et, consequat lorem. Sed dolor lectus, vulputate nec metus ut, semper scelerisque lorem. Fusce fermentum ac est at sagittis. Donec congue elit sed blandit finibus. Donec scelerisque efficitur lorem a sagittis. Aliquam lorem turpis, molestie vitae interdum nec, commodo vel erat. Phasellus lobortis mi et posuere volutpat. Morbi sit amet lacinia dolor. Praesent vel ante mauris. Sed nec viverra neque, ut bibendum massa.
+    <form action="giris.php" method="post">
+        <table align="center">
+            <tr>
+                <td align="right"><span class="mr-1">Kullanıcı Adı:</span></td>
+                <td><input type="email" name="id" required></td>
+                <td rowspan="2"><input class="btn btn-success btn-lg ml-3" type="submit" value="GİRİŞ"></td>
+            </tr>
+            <tr>
+                <td align="right"><span class="mr-1">Şifre:</span></td>
+                <td><input type="text" name="pw" required></td>
+            </tr>
+        </table>
+    </form>
 </div>
 </body>
 </html>
