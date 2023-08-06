@@ -8,7 +8,7 @@
 ####
 - [x] Şehrim şeklinde bir sayfa olmalı, bu sayfada memleketinize ya da sevdiğiniz şehre ait bilgiler yer almalıdır. (Şehrin nüfusu, gezilecek yerler vs.) Sayfanın başında ya da sonunda en az 4 resimden oluşan bir slider yer almalıdır. Slider’da yer alan resimlere tıklandığında ilgili resimlere ait içeriklere link olmalıdır.(İçerikler ayrıntılı olmadan site içersinde yer almalı)
 ####
-- [ ] Mirasımız linkli bir sayfa ile, şehre ait kültürel miras niteliğindeki önemli bir eser; ya da Takımımız linkli bir sayfada şehrin takımı (Futbol, Basketbol vb. branş farketmez) html elemanları kullanılarak tanıtılmalıdır.
+- [x] Mirasımız linkli bir sayfa ile, şehre ait kültürel miras niteliğindeki önemli bir eser; ya da Takımımız linkli bir sayfada şehrin takımı (Futbol, Basketbol vb. branş farketmez) html elemanları kullanılarak tanıtılmalıdır.
 ####
 - [ ] İlgi alanlarım isminde bir sayfada, ilgi alanlarınız çerçevesinde (film, spor vb) internetten bulduğunuz ücretsiz bir API servisinden veri alınıp gösterilmelidir.
 ####
