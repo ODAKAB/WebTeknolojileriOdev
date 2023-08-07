@@ -39,13 +39,13 @@
     <form action="giris.php" method="post">
         <table align="center">
             <tr>
-                <td class="text-right"><span class="mr-1">Kullanıcı Adı:</span></td>
-                <td><input type="email" name="id" required></td>
+                <td class="text-right"><label class="mr-1" for="idField">Kullanıcı Adı:</label></td>
+                <td><input type="email" id="idField" name="id" required></td>
                 <td rowspan="2"><input class="btn btn-success btn-lg ml-3" type="submit" value="GİRİŞ"></td>
             </tr>
             <tr>
-                <td class="text-right"><span class="mr-1">Şifre:</span></td>
-                <td><input type="text" name="pw" required></td>
+                <td class="text-right"><label class="mr-1" for="pwField">Şifre:</label></td>
+                <td><input type="text" id="pwField" name="pw" required></td>
             </tr>
         </table>
     </form>

@@ -14,8 +14,8 @@
 ####
 - [x] Sitede bir login sayfası yer almalıdır. Login sayfasında öğrenci numaranıza ait kullanıcı adı (örneğin ogrenci123456@okul.edu.tr) ve şifre (şifre “ogrenci123456” gibi herkesin domain içermeyen numarası olmalı) bir php sayfasına post edilip burada kullanıcı bilgileri gönderilen sayfada tanımlanan değişkenler ile kontrol edilmelidir. Eğer kontrol işlemi başarılı ise post edilen sayfada Hoşgeldiniz “ogrenci123456” gibi bir mesajla login işleminin başarılı olduğu bildirilmeli, login işlemi başarısız ise kullanıcı login sayfasına geri yönlendirilmelidir. Aynı zamanda login sayfasında kullanıcı adı ve şifre alanının boş geçilmemesi ve kullanıcı adının mail adresi olup olmadığı kontrol edilmelidir.
 ####
-- [ ] Sitede form elemanları içeren bir iletişim sayfası olmalıdır.
-- İletişim sayfası tüm form elemanlarını içermeli, formun tüm elamanlarının elemanın özelliğine göre seçim yada veri girişi yapılacak şekilde gönderilmesi sağlanmalıdır.
+- [x] Sitede form elemanları içeren bir iletişim sayfası olmalıdır.
+- İletişim sayfası tüm form elemanlarını içermeli, formun tüm elemanlarının elemanın özelliğine göre seçim yada veri girişi yapılacak şekilde gönderilmesi sağlanmalıdır.
 - İletişim formundaki gerekli kontrol işlemleri (boş mu, e-mail formatında mı vb.) javascript ve popüler bir js framework (Vue.js, Angular.js , Express.js vb) kullanılarak iki farklı butonda ayrı ayrı denetlenmelidir. (Html elemanlarına ait dahili denetimler kabul edilmeyecekitir)
 - Form, temizle ve gönder butonları içermelidir
 - Gönderilen form elemanlarına ait tüm bilgiler başka bir sayfada görüntülenmelidir.

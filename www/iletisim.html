@@ -8,6 +8,7 @@
     <script type="text/javascript" src="js/jquery.slim.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/vue.min.js"></script>
 </head>
 <body>
 <div class="container">
@@ -36,7 +37,62 @@
     </div>
 </div>
 <div class="container content mt-4 mb-4">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacinia accumsan magna, id varius ex blandit nec. In sed felis eu velit elementum pulvinar eu vel turpis. Vestibulum sit amet mi tincidunt, sodales tortor et, consequat lorem. Sed dolor lectus, vulputate nec metus ut, semper scelerisque lorem. Fusce fermentum ac est at sagittis. Donec congue elit sed blandit finibus. Donec scelerisque efficitur lorem a sagittis. Aliquam lorem turpis, molestie vitae interdum nec, commodo vel erat. Phasellus lobortis mi et posuere volutpat. Morbi sit amet lacinia dolor. Praesent vel ante mauris. Sed nec viverra neque, ut bibendum massa.
+    <div id="app">
+        <form @submit="submitForm" @reset="resetForm" action="iletisim.php" method="post">
+            <table align="center">
+                <tr>
+                    <td class="text-right"><label for="nameField">Ad:</label></td>
+                    <td colspan="2"><input class="fullw" type="text" id="nameField" name="name" v-model="formData.name"></td>
+                </tr>
+                <tr>
+                    <td class="text-right"><label for="emailField">E-posta:</label></td>
+                    <td colspan="2"><input class="fullw" type="text" id="emailField" name="email" v-model="formData.email"></td>
+                </tr>
+                <tr>
+                    <td class="text-right"><label for="messageField">Mesaj:</label></td>
+                    <td colspan="2"><textarea class="fullw" id="messageField" name="message" v-model="formData.message" rows="8" cols="40"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="text-left"><button class="btn btn-warning" type="reset">Sıfırla</button></td>
+                    <td class="text-right"><button class="btn btn-success" type="submit">Gönder</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                formData: {
+                    name: '',
+                    email: '',
+                    message: ''
+                }
+            },
+            methods: {
+                submitForm(e) {
+                    if (!this.formData.name) {
+                        alert('Ad alanı boş bırakılamaz.');
+                        e.preventDefault();
+                    }
+                    else if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.formData.email))) {
+                        alert('Geçersiz e-posta adresi');
+                        e.preventDefault();
+                    }
+                    else if (!this.formData.message) {
+                        alert('Mesaj alanı boş bırakılamaz.');
+                        e.preventDefault();
+                    }
+                },
+                resetForm() {
+                    this.formData.name = "";
+                    this.formData.email = "";
+                    this.formData.message = "";
+                }
+            }
+        });
+    </script>
 </div>
 </body>
 </html>
