@@ -36,7 +36,23 @@
     </div>
 </div>
 <div class="container content mt-4 mb-4">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacinia accumsan magna, id varius ex blandit nec. In sed felis eu velit elementum pulvinar eu vel turpis. Vestibulum sit amet mi tincidunt, sodales tortor et, consequat lorem. Sed dolor lectus, vulputate nec metus ut, semper scelerisque lorem. Fusce fermentum ac est at sagittis. Donec congue elit sed blandit finibus. Donec scelerisque efficitur lorem a sagittis. Aliquam lorem turpis, molestie vitae interdum nec, commodo vel erat. Phasellus lobortis mi et posuere volutpat. Morbi sit amet lacinia dolor. Praesent vel ante mauris. Sed nec viverra neque, ut bibendum massa.
+    <div id="weather-info" class="text-center">
+        <h2>Zimbabve, Harare</h2>
+        <p><strong>Sıcaklık:</strong> <span id="temp"></span>&#8451;</p>
+        <p><strong>Nem:</strong> <span id="humidity"></span>%</p>
+        <p><strong>Rüzgar hızı:</strong> <span id="wind-speed"></span>m/s</p>
+        <p><strong>Bulutluluk:</strong> <span id="cloudiness"></span>%</p>
+    </div>
+    <script>
+        fetch("havadurumu.php")
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('temp').textContent = Math.round(data.main.temp - 273.15);
+                document.getElementById('humidity').textContent = data.main.humidity;
+                document.getElementById('wind-speed').textContent = data.wind.speed;
+                document.getElementById('cloudiness').textContent = data.clouds.all;
+            });
+    </script>
 </div>
 </body>
 </html>
