@@ -20,4 +20,4 @@
 - Form, temizle ve gönder butonları içermelidir
 - Gönderilen form elemanlarına ait tüm bilgiler başka bir sayfada görüntülenmelidir.
 ####
-- [ ] Projenin içindeki stiller (renk, yazı tipi, vs.) ayrı bir stil dosyasında tutulmalıdır.
+- [x] Projenin içindeki stiller (renk, yazı tipi, vs.) ayrı bir stil dosyasında tutulmalıdır.
